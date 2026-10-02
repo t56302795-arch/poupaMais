@@ -1,0 +1,6 @@
+{
+  "name": "PoupaMais — Controle de Gastos",
+  "description": "Aplicativo PWA mobile-first para cadastro de pequenos gastos diários, cálculo do total gasto em tempo real e insights inteligentes de economia com IA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

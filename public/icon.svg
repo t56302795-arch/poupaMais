@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="coinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#022c22" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+
+  <!-- Inner subtle border -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="#34d399" stroke-width="4" stroke-opacity="0.3" />
+
+  <!-- Wallet / Card Graphic -->
+  <g filter="url(#shadow)">
+    <!-- Back card -->
+    <rect x="110" y="130" width="292" height="180" rx="28" fill="#064e3b" opacity="0.6" transform="rotate(-6 256 220)" />
+
+    <!-- Main Wallet / Card -->
+    <rect x="96" y="150" width="320" height="210" rx="28" fill="url(#cardGrad)" />
+    
+    <!-- Magnetic stripe / accent -->
+    <path d="M 96 195 L 416 195" stroke="#10b981" stroke-width="8" stroke-linecap="round" />
+
+    <!-- Coin popping out -->
+    <g transform="translate(256, 150)">
+      <circle cx="0" cy="0" r="58" fill="url(#coinGrad)" stroke="#b45309" stroke-width="4" />
+      <circle cx="0" cy="0" r="46" fill="none" stroke="#fef3c7" stroke-width="2" stroke-dasharray="6,4" />
+      <text x="0" y="14" font-family="system-ui, -apple-system, sans-serif" font-size="40" font-weight="900" fill="#78350f" text-anchor="middle">R$</text>
+    </g>
+
+    <!-- Upward trend arrow / savings spark -->
+    <g transform="translate(320, 240)">
+      <circle cx="28" cy="28" r="32" fill="#10b981" />
+      <path d="M 16 34 L 25 24 L 32 30 L 42 18 M 34 18 L 42 18 L 42 26" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <!-- App Name snippet -->
+    <text x="130" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" fill="#0f172a">PoupaMais</text>
+    <text x="130" y="334" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#059669">CONTROLE INTELIGENTE</text>
+  </g>
+</svg>
